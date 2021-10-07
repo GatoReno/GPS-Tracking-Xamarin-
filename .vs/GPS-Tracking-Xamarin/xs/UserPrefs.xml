@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{B2A444C5-9D2E-4A56-9DF8-DE6C4B014789}|Default">
+  <MonoDevelop.Ide.ItemProperties.GPS-Tracking-Xamarin.Android FirstBuild="True" PreferredExecutionTarget="Android.pixel_3a_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GPS-Tracking-Xamarin" expanded="True">
+            <Node name="GPS-Tracking-Xamarin.Android" expanded="True" />
+            <Node name="GPS-Tracking-Xamarin.iOS" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.GPS-Tracking-Xamarin.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.GPS-Tracking-Xamarin FirstBuild="True" />
+</Properties>
