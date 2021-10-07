@@ -1,0 +1,5 @@
+/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/MonoAndroid,Version=v11.0.AssemblyAttributes.cs
+/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/build.props
+/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/adb.props
+/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/stamp/_BuildLibraryImportsCache.stamp
+/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/res.flag

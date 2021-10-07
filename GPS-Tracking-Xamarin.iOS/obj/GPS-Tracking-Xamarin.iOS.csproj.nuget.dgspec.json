@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.iOS/GPS-Tracking-Xamarin.iOS.csproj": {}
+  },
+  "projects": {
+    "/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.iOS/GPS-Tracking-Xamarin.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.iOS/GPS-Tracking-Xamarin.iOS.csproj",
+        "projectName": "GPS_Tracking_Xamarin.iOS",
+        "projectPath": "/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.iOS/GPS-Tracking-Xamarin.iOS.csproj",
+        "packagesPath": "/Users/ed/.nuget/packages/",
+        "outputPath": "/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.iOS/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/ed/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2012, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
