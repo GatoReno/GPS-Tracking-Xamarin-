@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{B2A444C5-9D2E-4A56-9DF8-DE6C4B014789}|Default">
-  <MonoDevelop.Ide.ItemProperties.GPS-Tracking-Xamarin.Android PreferredExecutionTarget="Android.pixel_3a_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.ItemProperties.GPS-Tracking-Xamarin.Android AndroidDesignerPreferredTheme="MainTheme" PreferredExecutionTarget="Android.pixel_3a_pie_9_0_-_api_28" />
   <MonoDevelop.Ide.Workbench ActiveDocument="GPS-Tracking-Xamarin.Android/Properties/AndroidManifest.xml">
     <Files>
       <File FileName="GPS-Tracking-Xamarin.iOS/Services/LocationUpdateService.cs" Line="12" Column="46" />
-      <File FileName="GPS-Tracking-Xamarin.Android/Services/LocationUpdateService.cs" Line="5" Column="23" />
+      <File FileName="GPS-Tracking-Xamarin.Android/Services/LocationUpdateService.cs" />
       <File FileName="GPS-Tracking-Xamarin/Abstractions/ILocationUpdateService.cs" />
-      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml.cs" Line="6" Column="32" />
-      <File FileName="GPS-Tracking-Xamarin/VM/BaseViewModel.cs" Line="3" Column="1" />
-      <File FileName="GPS-Tracking-Xamarin/VM/MainViewModel.cs" Line="50" Column="64" />
-      <File FileName="GPS-Tracking-Xamarin.Android/Properties/AndroidManifest.xml" Line="5" Column="76" />
+      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml.cs" />
+      <File FileName="GPS-Tracking-Xamarin/VM/BaseViewModel.cs" />
+      <File FileName="GPS-Tracking-Xamarin/VM/MainViewModel.cs" />
+      <File FileName="GPS-Tracking-Xamarin.Android/Properties/AndroidManifest.xml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
