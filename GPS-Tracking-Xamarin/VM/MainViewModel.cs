@@ -39,9 +39,9 @@ namespace GPSTrackingXamarin.VM
 
         public ILocationUpdateService _LocationUpdateService;
 
-        public MainViewModel()
+        public MainViewModel(ILocationUpdateService locationUpdateService)
         {
-            _LocationUpdateService = DependencyService.Resolve<ILocationUpdateService>();
+            _LocationUpdateService = locationUpdateService;
             _LocationUpdateService.LocationChanged += LocationUpdateService_LocationChanged;
         }
 

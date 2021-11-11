@@ -88,9 +88,8 @@
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GPSTrackingXamarin\GPSTrackingXamarin.csproj">
-      <Project>{DA08E090-D4AE-4861-89E6-6ED894CF2856}</Project>
-      <Name>GPSTrackingXamarin</Name>
+    <ProjectReference Include="..\GPS-Tracking-Xamarin\GPS-Tracking-Xamarin.csproj">
+      <Name>GPS-Tracking-Xamarin</Name>
     </ProjectReference>
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

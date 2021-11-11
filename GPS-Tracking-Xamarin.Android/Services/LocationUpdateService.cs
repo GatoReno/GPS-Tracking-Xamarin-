@@ -5,7 +5,8 @@ using Android.OS;
 using Android.Runtime;
 using Xamarin.Forms;
 using GPS_Tracking_Xamarin.Droid.Services;
-using GPS_Tracking_Xamarin.Abstractions;
+
+using GPSTrackingXamarin.Abstractions;
 
 [assembly: Dependency(typeof(LocationUpdateService))]
 namespace GPS_Tracking_Xamarin.Droid.Services

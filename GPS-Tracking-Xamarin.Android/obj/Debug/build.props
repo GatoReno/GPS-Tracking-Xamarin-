@@ -14,9 +14,9 @@ androidlinkskip=
 androidsdkbuildtoolsversion=30.0.2
 androidsdkpath=/users/ed/library/developer/xamarin/android-sdk-macosx/
 androidndkpath=
-javasdkpath=/users/ed/library/developer/xamarin/jdk/microsoft_dist_openjdk_1.8.0.25/
+javasdkpath=/library/java/javavirtualmachines/temurin-8.jdk/contents/home/
 androidsequencepointsmode=none
-xamarinandroidversion=11.3.0-4
+xamarinandroidversion=12.0.0-3
 monosymbolarchive=false
 androiduselatestplatformsdk=false
 targetframeworkversion=v11.0
@@ -25,9 +25,10 @@ androidgeneratejnimarshalmethods=false
 os=unix
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=
+_nugetassetstimestamp=637722484214563053
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a
 x86
 x86_64
+androidmanifestplaceholders=
