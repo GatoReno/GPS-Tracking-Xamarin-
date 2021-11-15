@@ -1,7 +1,7 @@
 ﻿using System;
 using CoreLocation;
-using GPS_Tracking_Xamarin.Abstractions;
 using GPS_Tracking_Xamarin.iOS.Services;
+using GPSTrackingXamarin.Abstractions;
 
 [assembly: Xamarin.Forms.Dependency(typeof(LocationUpdateService))]
 namespace GPS_Tracking_Xamarin.iOS.Services
