@@ -60,7 +60,8 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\LocationUpdateService.cs" />
+    <Compile Include="Services\LocationService\LocationUpdateService.cs" />
+    <Compile Include="Services\WifiStrengthService\WifiService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -86,6 +87,8 @@
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
     <Folder Include="Services\" />
+    <Folder Include="Services\LocationService\" />
+    <Folder Include="Services\WifiStrengthService\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GPS-Tracking-Xamarin\GPS-Tracking-Xamarin.csproj">

@@ -1,4 +1,5 @@
 ﻿using GPSTrackingXamarin.Abstractions;
+using GPSTrackingXamarin.Abstractions.WifiAbstractions;
 using GPSTrackingXamarin.VM;
 using Xamarin.Forms;
 
@@ -8,11 +9,13 @@ namespace GPS_Tracking_Xamarin
     {
         MainViewModel _viewModel;
         ILocationUpdateService _locationService;
+        IWifiTracker _wifiTracker;
         public MainPage()
         {
             InitializeComponent();
             _locationService = DependencyService.Resolve<ILocationUpdateService>();
-            BindingContext = _viewModel = new MainViewModel(_locationService);
+            _wifiTracker = DependencyService.Resolve<IWifiTracker>();
+            BindingContext = _viewModel = new MainViewModel(_locationService,_wifiTracker);
 
         }
 
