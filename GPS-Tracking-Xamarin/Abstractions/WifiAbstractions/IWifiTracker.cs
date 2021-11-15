@@ -6,11 +6,11 @@ namespace GPSTrackingXamarin.Abstractions.WifiAbstractions
         void StarScanWifi();
         void StopScanWifi();
         double GetSignalStenght();
-        IWifiCastReciver Handler { get; set; }
+        event EventHandler<IWifiSignalEventArgs> GetWifiSignalRecived;
     }
 
-    public interface IWifiCastReciver
+    public interface IWifiSignalEventArgs
     {
-        void AddWifiSignalRecived(double wifiSignalStrenght);
+        int WifiSignalStrRecived { get; set; }        
     }
 }

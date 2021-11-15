@@ -7,6 +7,13 @@ using Xamarin.Forms;
 [assembly: Dependency(typeof(WifiService))]
 namespace GPS_Tracking_Xamarin.Droid.Services.WifiStrengthService
 {
+
+
+    public class WifiSignalEventArgs : EventArgs, IWifiSignalEventArgs
+    {
+        public int WifiSignalStrRecived { get ; set; }
+    }
+
     public class WifiService : Java.Lang.Object, IWifiTracker
     {
         WifiManager wifiManager;
@@ -15,7 +22,21 @@ namespace GPS_Tracking_Xamarin.Droid.Services.WifiStrengthService
         {
         }
 
-        public IWifiCastReciver Handler { get ; set ; }
+        public event EventHandler<IWifiSignalEventArgs> GetWifiSignalRecived;
+
+        event EventHandler<IWifiSignalEventArgs>
+            IWifiTracker.GetWifiSignalRecived
+        {
+            add
+            {
+                GetWifiSignalRecived += value;
+            }
+            remove
+            {
+                GetWifiSignalRecived -= value;
+            }
+        }
+
 
         public double GetSignalStenght()
         {
@@ -33,6 +54,8 @@ namespace GPS_Tracking_Xamarin.Droid.Services.WifiStrengthService
             return _wifiLevel;
         }
 
+       
+
         public void StarScanWifi()
         {
             if (wifiManager == null)
@@ -45,7 +68,12 @@ namespace GPS_Tracking_Xamarin.Droid.Services.WifiStrengthService
                 {
                     var wifiLevel = WifiManager.CalculateSignalLevel(item.Level, 100);
                     Console.WriteLine($"Wifi SSID: {item.Ssid} - Strengh: {wifiLevel}");
-                    Handler.AddWifiSignalRecived(wifiLevel);
+
+                    WifiSignalEventArgs args = new WifiSignalEventArgs() {
+                         WifiSignalStrRecived = wifiLevel
+                    };
+
+                    GetWifiSignalRecived(this,args);
                 }                
             }
 

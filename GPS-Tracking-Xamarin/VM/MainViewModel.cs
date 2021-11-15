@@ -1,5 +1,6 @@
 ﻿using System;
 using GPSTrackingXamarin.Abstractions;
+using GPSTrackingXamarin.Abstractions.WifiAbstractions;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -8,7 +9,8 @@ namespace GPSTrackingXamarin.VM
     public class MainViewModel : BaseViewModel
     {
         #region props
-        private string _long, _lat;
+        private double _wifiStr;
+        private string _long, _lat, _;
         public string Longitude
         {
             get
@@ -35,14 +37,25 @@ namespace GPSTrackingXamarin.VM
                 OnPropertyChanged("Latitude");
             }
         }
+
+
         #endregion
 
-        public ILocationUpdateService _LocationUpdateService;
+        private ILocationUpdateService _LocationUpdateService;
+        private IWifiTracker _wifiTracker;
 
-        public MainViewModel(ILocationUpdateService locationUpdateService)
+        public MainViewModel(ILocationUpdateService locationUpdateService, IWifiTracker wifiTracker)
         {
-            _LocationUpdateService = locationUpdateService;
+            _LocationUpdateService = locationUpdateService;            
             _LocationUpdateService.LocationChanged += LocationUpdateService_LocationChanged;
+
+            _wifiTracker = wifiTracker;
+            _wifiTracker.GetWifiSignalRecived += SetSignalStenght;
+        }
+
+        private void SetSignalStenght(object sender, IWifiSignalEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         public async void GetPermissions()
