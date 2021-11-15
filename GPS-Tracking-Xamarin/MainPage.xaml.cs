@@ -1,5 +1,5 @@
-﻿using GPSTrackingXamarin.VM;
-using GPSTrackingXamarin.Abstractions;
+﻿using GPSTrackingXamarin.Abstractions;
+using GPSTrackingXamarin.VM;
 using Xamarin.Forms;
 
 namespace GPS_Tracking_Xamarin
@@ -7,12 +7,13 @@ namespace GPS_Tracking_Xamarin
     public partial class MainPage : ContentPage
     {
         MainViewModel _viewModel;
-        public ILocationUpdateService _LocationUpdateService;
+        ILocationUpdateService _locationService;
         public MainPage()
         {
             InitializeComponent();
-            _LocationUpdateService = DependencyService.Resolve<ILocationUpdateService>();
-            BindingContext = _viewModel = new MainViewModel(_LocationUpdateService);
+            _locationService = DependencyService.Resolve<ILocationUpdateService>();
+            BindingContext = _viewModel = new MainViewModel(_locationService);
+
         }
 
         protected override void OnAppearing()

@@ -1,6 +1,5 @@
 ﻿using System;
 using CoreLocation;
-
 using GPS_Tracking_Xamarin.iOS.Services;
 using GPSTrackingXamarin.Abstractions;
 

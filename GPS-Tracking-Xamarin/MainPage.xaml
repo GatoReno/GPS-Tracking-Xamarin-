@@ -15,13 +15,13 @@
                 Text="Welcome to Xamarin.Forms!"
                 TextColor="White" />
         </Frame>
-        <StackLayout Padding="8" Orientation="Horizontal">
-            <Label Text="Latitude :" />
-            <Label Text="{Binding Latitude}" />
-        </StackLayout>
-        <StackLayout Padding="8" Orientation="Horizontal">
-            <Label Text="Longitude :" />
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Longitude: " />
             <Label Text="{Binding Longitude}" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Latitude: " />
+            <Label Text="{Binding Latitude}" />
         </StackLayout>
     </StackLayout>
 
