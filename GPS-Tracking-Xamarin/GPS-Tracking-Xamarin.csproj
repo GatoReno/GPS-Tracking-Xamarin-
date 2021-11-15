@@ -17,9 +17,13 @@
   <ItemGroup>
     <None Remove="Abstractions\" />
     <None Remove="VM\" />
+    <None Remove="Abstractions\LocationAbstractions\" />
+    <None Remove="Abstractions\WifiAbstractions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstractions\" />
     <Folder Include="VM\" />
+    <Folder Include="Abstractions\LocationAbstractions\" />
+    <Folder Include="Abstractions\WifiAbstractions\" />
   </ItemGroup>
 </Project>

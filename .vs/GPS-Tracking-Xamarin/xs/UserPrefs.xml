@@ -1,32 +1,36 @@
 ﻿<Properties StartupConfiguration="{B2A444C5-9D2E-4A56-9DF8-DE6C4B014789}|Default">
   <MonoDevelop.Ide.ItemProperties.GPS-Tracking-Xamarin.Android AndroidDesignerPreferredTheme="MainTheme" PreferredExecutionTarget="Android.00481da10412" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GPS-Tracking-Xamarin/MainPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GPS-Tracking-Xamarin.Android/Services/WifiStrengthService/WifiService.cs">
     <Files>
       <File FileName="GPS-Tracking-Xamarin.iOS/Services/LocationUpdateService.cs" Line="2" Column="20" />
       <File FileName="GPS-Tracking-Xamarin.Android/Services/LocationUpdateService.cs" Line="7" Column="43" />
       <File FileName="GPS-Tracking-Xamarin/Abstractions/ILocationUpdateService.cs" Line="1" Column="1" />
-      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml.cs" Line="15" Column="40" />
+      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml.cs" Line="15" Column="60" />
       <File FileName="GPS-Tracking-Xamarin/VM/BaseViewModel.cs" />
-      <File FileName="GPS-Tracking-Xamarin/VM/MainViewModel.cs" Line="44" Column="60" />
+      <File FileName="GPS-Tracking-Xamarin/VM/MainViewModel.cs" Line="42" Column="16" />
       <File FileName="GPS-Tracking-Xamarin.Android/Properties/AndroidManifest.xml" />
       <File FileName="GPS-Tracking-Xamarin/MainPage.xaml" Line="29" Column="1" />
+      <File FileName="GPS-Tracking-Xamarin/Abstractions/WifiAbstractions/IWifiTracker.cs" Line="15" Column="6" />
+      <File FileName="GPS-Tracking-Xamarin.Android/Services/WifiStrengthService/WifiService.cs" Line="5" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GPS-Tracking-Xamarin" expanded="True">
             <Node name="GPS-Tracking-Xamarin" expanded="True">
-              <Node name="Abstractions" expanded="True" />
-              <Node name="VM" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True">
-                <Node name="MainPage.xaml.cs" selected="True" />
+              <Node name="Abstractions" expanded="True">
+                <Node name="WifiAbstractions" expanded="True" />
               </Node>
+              <Node name="VM" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
             </Node>
             <Node name="GPS-Tracking-Xamarin.Android" expanded="True">
-              <Node name="Services" expanded="True" />
-            </Node>
-            <Node name="GPS-Tracking-Xamarin.iOS" expanded="True">
-              <Node name="Services" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="WifiStrengthService" expanded="True">
+                  <Node name="WifiService.cs" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
