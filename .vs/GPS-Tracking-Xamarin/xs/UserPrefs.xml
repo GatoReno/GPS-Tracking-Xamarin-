@@ -1,18 +1,9 @@
 ﻿<Properties StartupConfiguration="{B2A444C5-9D2E-4A56-9DF8-DE6C4B014789}|Default">
   <MonoDevelop.Ide.ItemProperties.GPS-Tracking-Xamarin.Android PreferredExecutionTarget="Android.00481da10412" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GPS-Tracking-Xamarin.Android/Services/WifiStrengthService/WifiService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GPS-Tracking-Xamarin.Android/Services/LocationService/LocationUpdateService.cs">
     <Files>
-      <File FileName="GPS-Tracking-Xamarin.iOS/Services/LocationUpdateService.cs" Line="2" Column="20" />
-      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml.cs" Line="30" Column="31" />
-      <File FileName="GPS-Tracking-Xamarin/VM/BaseViewModel.cs" Line="1" Column="1" />
-      <File FileName="GPS-Tracking-Xamarin.Android/Properties/AndroidManifest.xml" />
-      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml" Line="61" Column="1" />
-      <File FileName="GPS-Tracking-Xamarin.Android/Services/WifiStrengthService/WifiService.cs" Line="88" Column="19" />
-      <File FileName="GPS-Tracking-Xamarin/Models/TrackPoint.cs" Line="7" Column="32" />
-      <File FileName="GPS-Tracking-Xamarin/VM/MainViewModel.cs" Line="95" Column="21" />
-      <File FileName="GPS-Tracking-Xamarin.Android/MainActivity.cs" Line="1" Column="1" />
       <File FileName="GPS-Tracking-Xamarin/Abstractions/LocationAbstractions/ILocationUpdateService.cs" Line="7" Column="14" NotebookId="1" />
-      <File FileName="GPS-Tracking-Xamarin.Android/Services/LocationService/LocationUpdateService.cs" Line="24" Column="1" NotebookId="1" />
+      <File FileName="GPS-Tracking-Xamarin.Android/Services/LocationService/LocationUpdateService.cs" Line="41" Column="1" NotebookId="1" />
       <File FileName="GPS-Tracking-Xamarin/Abstractions/WifiAbstractions/IWifiTracker.cs" Line="7" Column="14" NotebookId="1" />
       <File FileName="GPS-Tracking-Xamarin/App.xaml.cs" Line="14" Column="10" NotebookId="1" />
     </Files>
@@ -31,10 +22,12 @@
             </Node>
             <Node name="GPS-Tracking-Xamarin.Android" expanded="True">
               <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="values" expanded="True" />
+              </Node>
               <Node name="Services" expanded="True">
-                <Node name="LocationService" expanded="True" />
-                <Node name="WifiStrengthService" expanded="True">
-                  <Node name="WifiService.cs" selected="True" />
+                <Node name="LocationService" expanded="True">
+                  <Node name="LocationUpdateService.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -51,9 +44,6 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/VM/MainViewModel.cs" relfile="GPS-Tracking-Xamarin/VM/MainViewModel.cs" line="111" column="1" />
-      <Breakpoint file="/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/Services/WifiStrengthService/WifiService.cs" relfile="GPS-Tracking-Xamarin.Android/Services/WifiStrengthService/WifiService.cs" line="60" column="1" />
-      <Breakpoint file="/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/Services/LocationService/LocationUpdateService.cs" relfile="GPS-Tracking-Xamarin.Android/Services/LocationService/LocationUpdateService.cs" line="39" column="1" />
-      <Breakpoint file="/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/Services/WifiStrengthService/WifiService.cs" relfile="GPS-Tracking-Xamarin.Android/Services/WifiStrengthService/WifiService.cs" line="62" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
