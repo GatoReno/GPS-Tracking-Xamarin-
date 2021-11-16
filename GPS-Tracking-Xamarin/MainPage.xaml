@@ -4,39 +4,57 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <StackLayout>
-        <Frame
-            Padding="24"
-            BackgroundColor="#2196F3"
-            CornerRadius="0">
-            <Label
-                FontSize="36"
-                HorizontalTextAlignment="Center"
-                Text="Welcome to Xamarin.Forms!"
-                TextColor="White" />
-        </Frame>
-        <StackLayout Orientation="Horizontal">
-            <Label Text="Longitude: " />
-            <Label Text="{Binding Longitude}" />
+    <ScrollView>
+        <StackLayout>
+            <Frame
+                Padding="24"
+                BackgroundColor="#2196F3"
+                CornerRadius="0">
+                <Label
+                    FontSize="36"
+                    HorizontalTextAlignment="Center"
+                    Text="Welcome to Xamarin.Forms!"
+                    TextColor="White" />
+            </Frame>
+
+            <StackLayout Orientation="Horizontal">
+                <Button
+                    x:Name="startBtn"
+                    Clicked="startBtn_Clicked"
+                    Text="Start" />
+                <Button
+                    x:Name="stopBtn"
+                    Clicked="StopServiceButton_Clicked"
+                    Text="Stop" />
+                <Button
+                    x:Name="cleanBtn"
+                    Clicked="cleanBtn_Clicked"
+                    Text="Clean" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Longitude: " />
+                <Label Text="{Binding Longitude}" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Latitude: " />
+                <Label Text="{Binding Latitude}" />
+            </StackLayout>
+
+
+
+            <ListView ItemsSource="{Binding trackPoints}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding WifiStr}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <Label Text="Latitude: " />
-            <Label Text="{Binding Latitude}" />
-        </StackLayout>
-
-
-
-        <ListView ItemsSource="{Binding trackPoints}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Orientation="Vertical">
-                            <Label Text="{Binding WifiStr}" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </StackLayout>
+    </ScrollView>
 
 </ContentPage>

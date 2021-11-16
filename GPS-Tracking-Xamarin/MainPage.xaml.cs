@@ -22,13 +22,24 @@ namespace GPS_Tracking_Xamarin
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            _viewModel.GetPermissions();
+            
         }
 
         async void StopServiceButton_Clicked(System.Object sender, System.EventArgs e)
         {
             _viewModel.StopGPS();
+            
             await DisplayAlert("GPS", "GPS Service Stoped", "Ok");
+        }
+
+        void startBtn_Clicked(System.Object sender, System.EventArgs e)
+        {
+            _viewModel.GetPermissions();
+        }
+
+        void cleanBtn_Clicked(System.Object sender, System.EventArgs e)
+        {
+            _viewModel.trackPoints.Clear();
         }
     }
 }

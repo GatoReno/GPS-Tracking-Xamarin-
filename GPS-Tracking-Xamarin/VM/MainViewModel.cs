@@ -73,7 +73,7 @@ namespace GPSTrackingXamarin.VM
             TrackPoint t = new TrackPoint()
             { Latitude = Latitude, Longitude = Longitude, WifiStr = $"{e.WifiSignalStrRecived}" };
             trackPoints.Add(t);
-            _wifiTracker.StopScanWifi();
+            StopWifiTracker();
         }
 
         public async void GetPermissions()
@@ -95,6 +95,12 @@ namespace GPSTrackingXamarin.VM
         public void StopGPS()
         {
             _LocationUpdateService.CloseService();
+            StopWifiTracker();
+        }
+
+        public void StopWifiTracker()
+        {
+            _wifiTracker.StopScanWifi();
         }
         private void GetCurrentLocation()
         {

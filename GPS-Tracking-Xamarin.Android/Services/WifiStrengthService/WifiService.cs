@@ -59,22 +59,23 @@ namespace GPS_Tracking_Xamarin.Droid.Services.WifiStrengthService
         public void StarScanWifi()
         {
             if (wifiManager == null)
-            {
+            {                
                 wifiManager =
-                (WifiManager)Android.App.Application.Context.GetSystemService(Android.Content.Context.WifiService);
+                (WifiManager)Android.App.Application.Context.GetSystemService(Android.Content.Context.WifiService);                              
+            }
 
-                var wifiList = wifiManager.ScanResults;
-                foreach (var item in wifiList)
+            var wifiList = wifiManager.ScanResults;
+            foreach (var item in wifiList)
+            {
+                var wifiLevel = WifiManager.CalculateSignalLevel(item.Level, 100);
+                Console.WriteLine($"Wifi SSID: {item.Ssid} - Strengh: {wifiLevel}");
+
+                WifiSignalEventArgs args = new WifiSignalEventArgs()
                 {
-                    var wifiLevel = WifiManager.CalculateSignalLevel(item.Level, 100);
-                    Console.WriteLine($"Wifi SSID: {item.Ssid} - Strengh: {wifiLevel}");
+                    WifiSignalStrRecived = wifiLevel
+                };
 
-                    WifiSignalEventArgs args = new WifiSignalEventArgs() {
-                         WifiSignalStrRecived = wifiLevel
-                    };
-
-                    GetWifiSignalRecived(this,args);
-                }                
+                GetWifiSignalRecived(this, args);
             }
 
         }
@@ -84,6 +85,7 @@ namespace GPS_Tracking_Xamarin.Droid.Services.WifiStrengthService
             if (wifiManager != null)
             {
                 wifiManager.Dispose();
+                wifiManager = null;
             }
         }
     }
