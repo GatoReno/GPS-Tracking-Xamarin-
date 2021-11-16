@@ -12,6 +12,7 @@ namespace GPSTrackingXamarin.VM
     {
         #region props
         private int _wifiStr;
+        private bool _chartVisibility;
         private string _long, _lat, _;
         public string Longitude
         {
@@ -48,8 +49,17 @@ namespace GPSTrackingXamarin.VM
                 OnPropertyChanged("WifiStr");
             }
         }
+        public bool ChartVisibility
+        {
+            get => _chartVisibility;
+            set
+            {
+                _chartVisibility = value;
+                OnPropertyChanged("ChartVisibility");
+            }
+        }
 
-        public ObservableCollection<TrackPoint> trackPoints { get; set; }
+        public ObservableCollection<TrackPoint> trackPoints { get; set; }        
 
         #endregion
 
@@ -59,10 +69,9 @@ namespace GPSTrackingXamarin.VM
         public MainViewModel(ILocationUpdateService locationUpdateService, IWifiTracker wifiTracker)
         {
             trackPoints = new ObservableCollection<TrackPoint>();
-
-            _LocationUpdateService = locationUpdateService;            
+            ChartVisibility = false;
+            _LocationUpdateService = locationUpdateService;
             _LocationUpdateService.LocationChanged += LocationUpdateService_LocationChanged;
-
             _wifiTracker = wifiTracker;
             _wifiTracker.GetWifiSignalRecived += SetSignalStenght;
         }
@@ -92,6 +101,7 @@ namespace GPSTrackingXamarin.VM
                 }
             }
         }
+
         public void StopGPS()
         {
             _LocationUpdateService.CloseService();
@@ -102,6 +112,7 @@ namespace GPSTrackingXamarin.VM
         {
             _wifiTracker.StopScanWifi();
         }
+
         private void GetCurrentLocation()
         {
             _LocationUpdateService.StartService();
@@ -113,6 +124,7 @@ namespace GPSTrackingXamarin.VM
             Latitude = e.Latitude.ToString();
             Longitude = e.Longitude.ToString();
             _wifiTracker.StarScanWifi();
+            ChartVisibility = true;
         }
 
     }

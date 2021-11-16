@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "VVC4LX//X6T3v6SS3vG/OOlSC2DlCcf+/ZlKbVyc8qVBazJYmdqlUQfgxS9yUbjGBxoQDcWmBm58VOJUWu6zpw==",
+  "dgSpecHash": "H6b5WMRH37c5uLW5WTsYVZVHjxzfVf1Ifn6+aHmmRS3USNwSMvsUwLxjUYBKlzD5fAFwqcwQ47Lc1s0fdEvUvg==",
   "success": true,
   "projectFilePath": "/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.iOS/GPS-Tracking-Xamarin.iOS.csproj",
   "expectedPackageFiles": [
     "/Users/ed/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
     "/Users/ed/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
-    "/Users/ed/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "/Users/ed/.nuget/packages/xamarin.forms/5.0.0.2244/xamarin.forms.5.0.0.2244.nupkg.sha512"
   ],
   "logs": []
 }

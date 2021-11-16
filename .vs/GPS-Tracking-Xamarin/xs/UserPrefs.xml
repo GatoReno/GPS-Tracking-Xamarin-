@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{B2A444C5-9D2E-4A56-9DF8-DE6C4B014789}|Default">
   <MonoDevelop.Ide.ItemProperties.GPS-Tracking-Xamarin.Android PreferredExecutionTarget="Android.00481da10412" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GPS-Tracking-Xamarin.Android/Services/LocationService/LocationUpdateService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GPS-Tracking-Xamarin/MainPage.xaml.cs">
     <Files>
-      <File FileName="GPS-Tracking-Xamarin/Abstractions/LocationAbstractions/ILocationUpdateService.cs" Line="7" Column="14" NotebookId="1" />
-      <File FileName="GPS-Tracking-Xamarin.Android/Services/LocationService/LocationUpdateService.cs" Line="41" Column="1" NotebookId="1" />
-      <File FileName="GPS-Tracking-Xamarin/Abstractions/WifiAbstractions/IWifiTracker.cs" Line="7" Column="14" NotebookId="1" />
-      <File FileName="GPS-Tracking-Xamarin/App.xaml.cs" Line="14" Column="10" NotebookId="1" />
+      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml" Line="48" Column="65" />
+      <File FileName="GPS-Tracking-Xamarin/VM/MainViewModel.cs" Line="127" Column="36" />
+      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml.cs" Line="43" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +17,9 @@
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="VM" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True">
+                <Node name="MainPage.xaml.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="GPS-Tracking-Xamarin.Android" expanded="True">
               <Node name="Properties" expanded="True" />
@@ -26,9 +27,7 @@
                 <Node name="values" expanded="True" />
               </Node>
               <Node name="Services" expanded="True">
-                <Node name="LocationService" expanded="True">
-                  <Node name="LocationUpdateService.cs" selected="True" />
-                </Node>
+                <Node name="LocationService" expanded="True" />
               </Node>
             </Node>
             <Node name="GPS-Tracking-Xamarin.iOS" expanded="True">
@@ -42,9 +41,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/VM/MainViewModel.cs" relfile="GPS-Tracking-Xamarin/VM/MainViewModel.cs" line="111" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

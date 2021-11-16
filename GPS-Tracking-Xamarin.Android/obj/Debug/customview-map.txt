@@ -34,6 +34,7 @@ paths;/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/D
 resources;/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/lp/45/jl/res/values/attrs.xml
 resources;/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/lp/45/jl/res/values/strings.xml
 resources;/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/lp/45/jl/res/values/styles.xml
+resources;/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/lp/88/jl/res/values/strings.xml
 resources;obj/Debug/res/values/colors.xml
 resources;obj/Debug/res/values/styles.xml
 set;/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/lp/45/jl/res/anim/enterfromleft.xml
@@ -41,6 +42,7 @@ set;/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Deb
 set;/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/lp/45/jl/res/anim/exittoleft.xml
 set;/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/lp/45/jl/res/anim/exittoright.xml
 string;/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/lp/45/jl/res/values/strings.xml
+string;/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/lp/88/jl/res/values/strings.xml
 style;/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/lp/45/jl/res/values/styles.xml
 style;obj/Debug/res/values/styles.xml
 translate;/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/lp/45/jl/res/anim/enterfromleft.xml
