@@ -1005,3 +1005,5 @@ GPS-Tracking-Xamarin.Android/obj/Debug/stamp/_CompileToDalvik.stamp
 GPS-Tracking-Xamarin.Android/obj/Debug/stamp/_ConvertCustomView.stamp
 GPS-Tracking-Xamarin.Android/obj/Debug/stamp/_GenerateJavaStubs.stamp
 GPS-Tracking-Xamarin.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
+GPS-Tracking-Xamarin.Android/obj/Debug/android/bin/classes/crc64b55ebd9a3640347d/WifiService.class
+GPS-Tracking-Xamarin.Android/obj/Debug/android/src/crc64b55ebd9a3640347d/WifiService.java
