@@ -23,6 +23,20 @@
             <Label Text="Latitude: " />
             <Label Text="{Binding Latitude}" />
         </StackLayout>
+
+
+
+        <ListView ItemsSource="{Binding trackPoints}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="{Binding WifiStr}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackLayout>
 
 </ContentPage>

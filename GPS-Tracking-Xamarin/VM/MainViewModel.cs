@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using GPSTrackingXamarin.Abstractions;
 using GPSTrackingXamarin.Abstractions.WifiAbstractions;
+using GPSTrackingXamarin.Models;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -9,7 +11,7 @@ namespace GPSTrackingXamarin.VM
     public class MainViewModel : BaseViewModel
     {
         #region props
-        private double _wifiStr;
+        private int _wifiStr;
         private string _long, _lat, _;
         public string Longitude
         {
@@ -37,7 +39,17 @@ namespace GPSTrackingXamarin.VM
                 OnPropertyChanged("Latitude");
             }
         }
+        public int WifiStr
+        {
+            get => _wifiStr;
+            set
+            {
+                _wifiStr = value;
+                OnPropertyChanged("WifiStr");
+            }
+        }
 
+        public ObservableCollection<TrackPoint> trackPoints { get; set; }
 
         #endregion
 
@@ -46,6 +58,8 @@ namespace GPSTrackingXamarin.VM
 
         public MainViewModel(ILocationUpdateService locationUpdateService, IWifiTracker wifiTracker)
         {
+            trackPoints = new ObservableCollection<TrackPoint>();
+
             _LocationUpdateService = locationUpdateService;            
             _LocationUpdateService.LocationChanged += LocationUpdateService_LocationChanged;
 
@@ -55,7 +69,11 @@ namespace GPSTrackingXamarin.VM
 
         private void SetSignalStenght(object sender, IWifiSignalEventArgs e)
         {
-            throw new NotImplementedException();
+            WifiStr = e.WifiSignalStrRecived;
+            TrackPoint t = new TrackPoint()
+            { Latitude = Latitude, Longitude = Longitude, WifiStr = $"{e.WifiSignalStrRecived}" };
+            trackPoints.Add(t);
+            _wifiTracker.StopScanWifi();
         }
 
         public async void GetPermissions()
@@ -88,6 +106,7 @@ namespace GPSTrackingXamarin.VM
         {
             Latitude = e.Latitude.ToString();
             Longitude = e.Longitude.ToString();
+            _wifiTracker.StarScanWifi();
         }
 
     }
