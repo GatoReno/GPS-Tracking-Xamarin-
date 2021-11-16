@@ -22,7 +22,7 @@
                 <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
                     <Button
                         x:Name="startBtn"
-                        Clicked="startBtn_Clicked"
+                        Clicked="mockData_Clicked"
                         Text="Start" />
                     <Button
                         x:Name="stopBtn"
@@ -32,7 +32,15 @@
                         x:Name="cleanBtn"
                         Clicked="cleanBtn_Clicked"
                         Text="Clean" />
+
+                    
                 </StackLayout>
+
+                <!--<Button
+                        Text="mock data"
+                        x:Name="mockData"
+                        Clicked="mockData_Clicked"
+                        />-->
 
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Longitude: " />
@@ -45,12 +53,14 @@
 
 
 
-                <StackLayout IsVisible="{Binding ChartVisibility}">
+                <StackLayout >
 
                     <microchats:ChartView
-                        x:Name="chartView"
-                        Chart="{Binding BarChartSample}"
-                        HeightRequest="250" />
+                        x:Name="chartView"                         
+                        HeightRequest="240"
+                        BackgroundColor="Pink"
+                        HorizontalOptions="Fill"
+                        />
 
                 </StackLayout>
 

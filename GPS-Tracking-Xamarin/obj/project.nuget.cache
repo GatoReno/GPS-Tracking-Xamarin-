@@ -1,12 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "QKCPhvBqdqPXYKRefcZlvOYBVDCp6AziSUu1WQ7lkoms6oNMjIVeiNjwb2H4RwRBm+oU/JbkppbJ6Y/BL3bLCg==",
+  "dgSpecHash": "zYRSzXSlqWww31Ot+NJULMvzdlNG7sHuCKysb5N9NPkObZIxjW33kja8CSNtiuANloAaITJuHtLpKx0eHXeO3Q==",
   "success": true,
   "projectFilePath": "/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.csproj",
   "expectedPackageFiles": [
+    "/Users/ed/.nuget/packages/harfbuzzsharp/2.6.1.6/harfbuzzsharp.2.6.1.6.nupkg.sha512",
+    "/Users/ed/.nuget/packages/microcharts/0.9.5.7/microcharts.0.9.5.7.nupkg.sha512",
+    "/Users/ed/.nuget/packages/microcharts.forms/0.9.5.7/microcharts.forms.0.9.5.7.nupkg.sha512",
     "/Users/ed/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/ed/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/ed/.nuget/packages/skiasharp/2.80.1/skiasharp.2.80.1.nupkg.sha512",
+    "/Users/ed/.nuget/packages/skiasharp.views.forms/2.80.1/skiasharp.views.forms.2.80.1.nupkg.sha512",
+    "/Users/ed/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/Users/ed/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/ed/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/ed/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "/Users/ed/.nuget/packages/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg.sha512",
+    "/Users/ed/.nuget/packages/topten.richtextkit/0.3.129/topten.richtextkit.0.3.129.nupkg.sha512",
     "/Users/ed/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
     "/Users/ed/.nuget/packages/xamarin.forms/5.0.0.2244/xamarin.forms.5.0.0.2244.nupkg.sha512"
   ],

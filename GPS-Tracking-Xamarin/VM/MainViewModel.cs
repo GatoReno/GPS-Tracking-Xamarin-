@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using GPSTrackingXamarin.Abstractions;
 using GPSTrackingXamarin.Abstractions.WifiAbstractions;
 using GPSTrackingXamarin.Models;
+using Microcharts;
+using SkiaSharp;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -59,7 +62,21 @@ namespace GPSTrackingXamarin.VM
             }
         }
 
-        public ObservableCollection<TrackPoint> trackPoints { get; set; }        
+        public ObservableCollection<TrackPoint> trackPoints { get; set; }
+        public ObservableCollection<Microcharts.ChartEntry> chartEntries { get; set; }
+
+
+
+        private LineChart _lineChart;
+        public LineChart LineChart
+        {
+            get => _lineChart;
+            set
+            {
+                _lineChart = value;
+                OnPropertyChanged("LineChart");
+            }
+        }
 
         #endregion
 
@@ -68,8 +85,9 @@ namespace GPSTrackingXamarin.VM
 
         public MainViewModel(ILocationUpdateService locationUpdateService, IWifiTracker wifiTracker)
         {
-            trackPoints = new ObservableCollection<TrackPoint>();
             ChartVisibility = false;
+            chartEntries = new ObservableCollection<Microcharts.ChartEntry>();            
+            trackPoints = new ObservableCollection<TrackPoint>();
             _LocationUpdateService = locationUpdateService;
             _LocationUpdateService.LocationChanged += LocationUpdateService_LocationChanged;
             _wifiTracker = wifiTracker;
@@ -82,6 +100,12 @@ namespace GPSTrackingXamarin.VM
             TrackPoint t = new TrackPoint()
             { Latitude = Latitude, Longitude = Longitude, WifiStr = $"{e.WifiSignalStrRecived}" };
             trackPoints.Add(t);
+            chartEntries.Add(new Microcharts.ChartEntry(e.WifiSignalStrRecived)
+            {
+                Color = SKColor.Parse("#FF4081"),
+                Label = "x",
+                ValueLabel = $"{e.WifiSignalStrRecived} w"
+            });
             StopWifiTracker();
         }
 
@@ -106,6 +130,30 @@ namespace GPSTrackingXamarin.VM
         {
             _LocationUpdateService.CloseService();
             StopWifiTracker();
+            DrawChart();
+        }
+
+        private void DrawChart()
+        {
+            var chartEntriesLinearChart = new List<ChartEntry>();
+            if (chartEntries.Count > 0)
+            {
+                ChartVisibility = true;
+                foreach (var item in chartEntries)
+                {
+                    chartEntriesLinearChart.Add(item);
+                }
+
+                LineChart = new LineChart()
+                {
+                    Entries = chartEntriesLinearChart,
+                    LabelTextSize = 30f,
+                    IsAnimated = true,
+                    LabelOrientation = Orientation.Horizontal,
+                    ValueLabelOrientation = Orientation.Horizontal,
+                };
+            }
+
         }
 
         public void StopWifiTracker()
@@ -124,7 +172,7 @@ namespace GPSTrackingXamarin.VM
             Latitude = e.Latitude.ToString();
             Longitude = e.Longitude.ToString();
             _wifiTracker.StarScanWifi();
-            ChartVisibility = true;
+
         }
 
     }

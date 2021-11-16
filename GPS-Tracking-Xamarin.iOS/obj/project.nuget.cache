@@ -1,10 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "H6b5WMRH37c5uLW5WTsYVZVHjxzfVf1Ifn6+aHmmRS3USNwSMvsUwLxjUYBKlzD5fAFwqcwQ47Lc1s0fdEvUvg==",
+  "dgSpecHash": "9UACC+trZ2CrcVN7SWFThuHY/srSknnkpfWvvXwRw5rgLC+RmJCCeq0NTzT1Kq4L1KDIz2/5MSucnX96g2nWnQ==",
   "success": true,
   "projectFilePath": "/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.iOS/GPS-Tracking-Xamarin.iOS.csproj",
   "expectedPackageFiles": [
+    "/Users/ed/.nuget/packages/harfbuzzsharp/2.6.1.6/harfbuzzsharp.2.6.1.6.nupkg.sha512",
+    "/Users/ed/.nuget/packages/microcharts/0.9.5.7/microcharts.0.9.5.7.nupkg.sha512",
+    "/Users/ed/.nuget/packages/microcharts.forms/0.9.5.7/microcharts.forms.0.9.5.7.nupkg.sha512",
+    "/Users/ed/.nuget/packages/skiasharp/2.80.1/skiasharp.2.80.1.nupkg.sha512",
+    "/Users/ed/.nuget/packages/skiasharp.views/2.80.1/skiasharp.views.2.80.1.nupkg.sha512",
+    "/Users/ed/.nuget/packages/skiasharp.views.forms/2.80.1/skiasharp.views.forms.2.80.1.nupkg.sha512",
     "/Users/ed/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/ed/.nuget/packages/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg.sha512",
+    "/Users/ed/.nuget/packages/topten.richtextkit/0.3.129/topten.richtextkit.0.3.129.nupkg.sha512",
     "/Users/ed/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
     "/Users/ed/.nuget/packages/xamarin.forms/5.0.0.2244/xamarin.forms.5.0.0.2244.nupkg.sha512"
   ],

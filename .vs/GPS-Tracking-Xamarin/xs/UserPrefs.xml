@@ -1,24 +1,21 @@
 ﻿<Properties StartupConfiguration="{B2A444C5-9D2E-4A56-9DF8-DE6C4B014789}|Default">
   <MonoDevelop.Ide.ItemProperties.GPS-Tracking-Xamarin.Android PreferredExecutionTarget="Android.00481da10412" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GPS-Tracking-Xamarin/MainPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GPS-Tracking-Xamarin/VM/BaseViewModel.cs">
     <Files>
-      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml" Line="48" Column="65" />
-      <File FileName="GPS-Tracking-Xamarin/VM/MainViewModel.cs" Line="127" Column="36" />
-      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml.cs" Line="43" Column="45" />
+      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml" Line="60" Column="38" />
+      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml.cs" Line="36" Column="37" />
+      <File FileName="GPS-Tracking-Xamarin/VM/MainViewModel.cs" Line="14" Column="39" />
+      <File FileName="GPS-Tracking-Xamarin/VM/BaseViewModel.cs" Line="13" Column="59" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GPS-Tracking-Xamarin" expanded="True">
             <Node name="GPS-Tracking-Xamarin" expanded="True">
-              <Node name="Abstractions" expanded="True">
-                <Node name="LocationAbstractions" expanded="True" />
-                <Node name="WifiAbstractions" expanded="True" />
-              </Node>
-              <Node name="Models" expanded="True" />
-              <Node name="VM" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True">
-                <Node name="MainPage.xaml.cs" selected="True" />
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Abstractions" expanded="True" />
+              <Node name="VM" expanded="True">
+                <Node name="BaseViewModel.cs" selected="True" />
               </Node>
             </Node>
             <Node name="GPS-Tracking-Xamarin.Android" expanded="True">
@@ -26,12 +23,6 @@
               <Node name="Resources" expanded="True">
                 <Node name="values" expanded="True" />
               </Node>
-              <Node name="Services" expanded="True">
-                <Node name="LocationService" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="GPS-Tracking-Xamarin.iOS" expanded="True">
-              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
