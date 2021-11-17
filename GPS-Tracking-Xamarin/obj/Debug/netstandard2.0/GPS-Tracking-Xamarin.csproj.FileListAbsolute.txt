@@ -12,3 +12,4 @@
 /Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/obj/Debug/netstandard2.0/GPS-Tracking-Xamarin.dll
 /Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/obj/Debug/netstandard2.0/ref/GPS-Tracking-Xamarin.dll
 /Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/obj/Debug/netstandard2.0/GPS-Tracking-Xamarin.pdb
+/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/obj/Debug/netstandard2.0/GPS-Tracking-Xamarin.csproj.AssemblyReference.cache

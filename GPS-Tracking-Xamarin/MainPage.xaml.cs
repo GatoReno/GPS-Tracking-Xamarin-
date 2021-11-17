@@ -15,7 +15,7 @@ namespace GPS_Tracking_Xamarin
         ILocationUpdateService _locationService;
         IWifiTracker _wifiTracker;
 
-        LineChart _chart = new LineChart();
+        LineChart _chart;
         List<ChartEntry> entries;
 
         public MainPage()
@@ -24,6 +24,7 @@ namespace GPS_Tracking_Xamarin
             _locationService = DependencyService.Resolve<ILocationUpdateService>();
             _wifiTracker = DependencyService.Resolve<IWifiTracker>();
             BindingContext = _viewModel = new MainViewModel(_locationService,_wifiTracker);
+            _chart = new LineChart();
             _chart.Entries = _viewModel.chartEntries;
             this.chartView.Chart = _chart;
         }

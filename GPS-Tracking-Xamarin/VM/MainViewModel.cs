@@ -63,8 +63,9 @@ namespace GPSTrackingXamarin.VM
         }
 
         public ObservableCollection<TrackPoint> trackPoints { get; set; }
-        public ObservableCollection<Microcharts.ChartEntry> chartEntries { get; set; }
+        //public ObservableCollection<Microcharts.ChartEntry> chartEntries { get; set; }
 
+        public List<ChartEntry> chartEntries { get; set; }
 
 
         private LineChart _lineChart;
@@ -86,7 +87,7 @@ namespace GPSTrackingXamarin.VM
         public MainViewModel(ILocationUpdateService locationUpdateService, IWifiTracker wifiTracker)
         {
             ChartVisibility = false;
-            chartEntries = new ObservableCollection<Microcharts.ChartEntry>();            
+            chartEntries = new List<ChartEntry>();
             trackPoints = new ObservableCollection<TrackPoint>();
             _LocationUpdateService = locationUpdateService;
             _LocationUpdateService.LocationChanged += LocationUpdateService_LocationChanged;
