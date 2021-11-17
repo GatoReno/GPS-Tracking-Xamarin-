@@ -22,10 +22,6 @@ namespace GPS_Tracking_Xamarin
             _locationService = DependencyService.Resolve<ILocationUpdateService>();
             _wifiTracker = DependencyService.Resolve<IWifiTracker>();
             BindingContext = _viewModel = new MainViewModel(_locationService,_wifiTracker);
-
-            //BarChartSample = new LineChart() { Entries = _viewModel.chartEntries };
-            //this.chartView.Chart = BarChartSample;           
-
         }
 
 
@@ -52,32 +48,10 @@ namespace GPS_Tracking_Xamarin
                     ValueLabel = "100%"
                 });
             }
-            /*
-            var entries = new[] {
-                new Microcharts.ChartEntry(100){
-                    Color = SKColor.Parse("#4286f4"),
-                    Label = "x",
-                    ValueLabel = "100%"
-                },
-                new Microcharts.ChartEntry(90){
-                    Color = SKColor.Parse("#ba1079"),
-                    Label = "x",
-                    ValueLabel = "90%"
-                },
-                new Microcharts.ChartEntry(70){
-                    Color = SKColor.Parse("#5ae273"),
-                    Label = "x",
-                    ValueLabel = "70%"
-                },
-            };
-            */
-
-
+           
 
             _chart.Entries = entries;
             this.chartView.Chart = _chart;
-
-          //  chartView.
 
         }
 
