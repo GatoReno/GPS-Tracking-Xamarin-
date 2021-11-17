@@ -32,8 +32,12 @@ namespace GPS_Tracking_Xamarin.Droid.Services
 
         public void CloseService()
         {
-            locationManager.RemoveUpdates(this);
-            locationManager.Dispose();            
+            if (locationManager != null)
+            {
+                locationManager.RemoveUpdates(this);
+                locationManager.Dispose();
+            }
+                     
         }
 
         public void OnLocationChanged(Location location)

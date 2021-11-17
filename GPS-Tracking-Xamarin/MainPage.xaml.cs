@@ -16,7 +16,7 @@ namespace GPS_Tracking_Xamarin
         IWifiTracker _wifiTracker;
 
         LineChart _chart;
-        List<ChartEntry> entries;
+        List<ChartEntry> _entries;
 
         public MainPage()
         {
@@ -25,35 +25,36 @@ namespace GPS_Tracking_Xamarin
             _wifiTracker = DependencyService.Resolve<IWifiTracker>();
             BindingContext = _viewModel = new MainViewModel(_locationService,_wifiTracker);
             _chart = new LineChart();
+            _entries = new List<ChartEntry>();
             _chart.Entries = _viewModel.chartEntries;
-            this.chartView.Chart = _chart;
+            
         }
         
 
-        void mockData_Clicked(System.Object sender, System.EventArgs e)
-        {
-            var random = new Random();
-            if (_chart == null)
-            {
-                _chart = new LineChart();
-                entries = new List<ChartEntry>();
+        //void mockData_Clicked(System.Object sender, System.EventArgs e)
+        //{
+        //    var random = new Random();
+        //    if (_chart == null)
+        //    {
+        //        _chart = new LineChart();
+        //        _entries = new List<ChartEntry>();
 
-            }
+        //    }
 
-            for (var i = 0; i<10; i++)
-            {
-                entries.Add(new Microcharts.ChartEntry(random.Next(0, 100))
-                {
-                    Color = SKColor.Parse("#4286f4"),
-                    Label = "x",
-                    ValueLabel = "100%"
-                });
-            }
-           
+        //    for (var i = 0; i<10; i++)
+        //    {
+        //        _entries.Add(new Microcharts.ChartEntry(random.Next(0, 100))
+        //        {
+        //            Color = SKColor.Parse("#4286f4"),
+        //            Label = "x",
+        //            ValueLabel = "100%"
+        //        });
+        //    }
 
-         
 
-        }
+        //    this.chartView.Chart = _chart;
+
+        //}
 
         protected override void OnAppearing()
         {
@@ -70,11 +71,14 @@ namespace GPS_Tracking_Xamarin
         void startBtn_Clicked(System.Object sender, System.EventArgs e)
         {
             _viewModel.GetPermissions();
+            this.chartView.Chart = _viewModel.LineChartWifi;
         }
 
         void cleanBtn_Clicked(System.Object sender, System.EventArgs e)
         {
             _viewModel.trackPoints.Clear();
+            _viewModel.chartEntries.Clear();
+            _viewModel.LineChartWifi = new LineChart();
             _viewModel.ChartVisibility = false;
         }
 

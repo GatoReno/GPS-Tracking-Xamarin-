@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using GPSTrackingXamarin.Abstractions;
 using GPSTrackingXamarin.Abstractions.WifiAbstractions;
 using GPSTrackingXamarin.Models;
@@ -69,7 +70,7 @@ namespace GPSTrackingXamarin.VM
 
 
         private LineChart _lineChart;
-        public LineChart LineChart
+        public LineChart LineChartWifi
         {
             get => _lineChart;
             set
@@ -89,6 +90,8 @@ namespace GPSTrackingXamarin.VM
             ChartVisibility = false;
             chartEntries = new List<ChartEntry>();
             trackPoints = new ObservableCollection<TrackPoint>();
+            trackPoints.Reverse<TrackPoint>();
+            LineChartWifi = new LineChart();            
             _LocationUpdateService = locationUpdateService;
             _LocationUpdateService.LocationChanged += LocationUpdateService_LocationChanged;
             _wifiTracker = wifiTracker;
@@ -101,12 +104,14 @@ namespace GPSTrackingXamarin.VM
             TrackPoint t = new TrackPoint()
             { Latitude = Latitude, Longitude = Longitude, WifiStr = $"{e.WifiSignalStrRecived}" };
             trackPoints.Add(t);
+            
             chartEntries.Add(new Microcharts.ChartEntry(e.WifiSignalStrRecived)
             {
                 Color = SKColor.Parse("#FF4081"),
                 Label = "x",
                 ValueLabel = $"{e.WifiSignalStrRecived} w"
             });
+            LineChartWifi.Entries = chartEntries;
             StopWifiTracker();
         }
 
@@ -136,16 +141,17 @@ namespace GPSTrackingXamarin.VM
 
         private void DrawChart()
         {
+            ChartVisibility = true;
             var chartEntriesLinearChart = new List<ChartEntry>();
             if (chartEntries.Count > 0)
             {
-                ChartVisibility = true;
+                
                 foreach (var item in chartEntries)
                 {
                     chartEntriesLinearChart.Add(item);
                 }
 
-                LineChart = new LineChart()
+                LineChartWifi = new LineChart()
                 {
                     Entries = chartEntriesLinearChart,
                     LabelTextSize = 30f,

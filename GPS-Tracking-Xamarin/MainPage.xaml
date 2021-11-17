@@ -32,8 +32,6 @@
                         x:Name="cleanBtn"
                         Clicked="cleanBtn_Clicked"
                         Text="Clean" />
-
-
                 </StackLayout>
 
                 <StackLayout Orientation="Horizontal">
@@ -47,23 +45,28 @@
 
 
 
-                <StackLayout>
 
-                    <microchats:ChartView
-                        x:Name="chartView"
-                        BackgroundColor="Pink"
-                        HeightRequest="240"
-                        HorizontalOptions="Fill" />
-
-                </StackLayout>
+                <microchats:ChartView
+                    x:Name="chartView"
+                    HeightRequest="240"
+                    HorizontalOptions="Fill" />
 
 
-                <ListView ItemsSource="{Binding trackPoints}">
+                <ListView HasUnevenRows="True" ItemsSource="{Binding trackPoints}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <StackLayout Orientation="Vertical">
-                                    <Label Text="{Binding WifiStr}" />
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding WifiStr}" />
+                                        <Label FontSize="Micro" Text="wifi" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding Latitude}" />
+                                        <Label Text="{Binding Longitude}" />
+                                    </StackLayout>
+
+
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
