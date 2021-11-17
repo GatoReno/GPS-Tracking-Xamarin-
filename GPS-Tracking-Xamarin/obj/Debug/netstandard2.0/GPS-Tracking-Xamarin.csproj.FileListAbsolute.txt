@@ -2,7 +2,7 @@
 /Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/bin/Debug/netstandard2.0/GPS-Tracking-Xamarin.dll
 /Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/bin/Debug/netstandard2.0/ref/GPS-Tracking-Xamarin.dll
 /Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/bin/Debug/netstandard2.0/GPS-Tracking-Xamarin.pdb
-/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/obj/Debug/netstandard2.0/GPS-Tracking-Xamarin.csproj.AssemblyReference.cache
+/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/obj/Debug/netstandard2.0/GPS-Tracking-Xamarin.GeneratedMSBuildEditorConfig.editorconfig
 /Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/obj/Debug/netstandard2.0/App.xaml.g.cs
 /Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
 /Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/obj/Debug/netstandard2.0/GPS-Tracking-Xamarin.AssemblyInfoInputs.cache
@@ -12,4 +12,3 @@
 /Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/obj/Debug/netstandard2.0/GPS-Tracking-Xamarin.dll
 /Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/obj/Debug/netstandard2.0/ref/GPS-Tracking-Xamarin.dll
 /Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/obj/Debug/netstandard2.0/GPS-Tracking-Xamarin.pdb
-/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin/obj/Debug/netstandard2.0/GPS-Tracking-Xamarin.GeneratedMSBuildEditorConfig.editorconfig

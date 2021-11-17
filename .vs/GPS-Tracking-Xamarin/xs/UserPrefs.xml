@@ -1,27 +1,22 @@
 ﻿<Properties StartupConfiguration="{B2A444C5-9D2E-4A56-9DF8-DE6C4B014789}|Default">
-  <MonoDevelop.Ide.ItemProperties.GPS-Tracking-Xamarin.Android PreferredExecutionTarget="Android.pixel_3a_pie_9_0_-_api_28" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GPS-Tracking-Xamarin/MainPage.xaml">
+  <MonoDevelop.Ide.ItemProperties.GPS-Tracking-Xamarin.Android PreferredExecutionTarget="Android.00481da10412" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GPS-Tracking-Xamarin/VM/MainViewModel.cs">
     <Files>
-      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml.cs" Line="17" Column="9" />
-      <File FileName="GPS-Tracking-Xamarin/VM/MainViewModel.cs" Line="79" Column="10" />
-      <File FileName="GPS-Tracking-Xamarin/VM/BaseViewModel.cs" />
-      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml" Line="60" Column="38" NotebookId="1" />
+      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml.cs" Line="27" Column="1" />
+      <File FileName="GPS-Tracking-Xamarin/VM/BaseViewModel.cs" Line="11" Column="49" />
+      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml" Line="25" Column="50" NotebookId="1" />
+      <File FileName="GPS-Tracking-Xamarin/VM/MainViewModel.cs" Line="66" Column="61" NotebookId="1" />
+      <File FileName="../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="771" Column="3" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GPS-Tracking-Xamarin" expanded="True">
             <Node name="GPS-Tracking-Xamarin" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Abstractions" expanded="True" />
-              <Node name="VM" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" selected="True" />
-            </Node>
-            <Node name="GPS-Tracking-Xamarin.Android" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="Resources" expanded="True">
-                <Node name="values" expanded="True" />
+              <Node name="VM" expanded="True">
+                <Node name="MainViewModel.cs" selected="True" />
               </Node>
+              <Node name="MainPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>

@@ -14,7 +14,9 @@ namespace GPS_Tracking_Xamarin
         MainViewModel _viewModel;
         ILocationUpdateService _locationService;
         IWifiTracker _wifiTracker;
-        Chart BarChartSample;
+
+        LineChart _chart = new LineChart();
+        List<ChartEntry> entries;
 
         public MainPage()
         {
@@ -22,12 +24,10 @@ namespace GPS_Tracking_Xamarin
             _locationService = DependencyService.Resolve<ILocationUpdateService>();
             _wifiTracker = DependencyService.Resolve<IWifiTracker>();
             BindingContext = _viewModel = new MainViewModel(_locationService,_wifiTracker);
+            _chart.Entries = _viewModel.chartEntries;
+            this.chartView.Chart = _chart;
         }
-
-
-
-        LineChart _chart;
-        List<ChartEntry> entries = null;
+        
 
         void mockData_Clicked(System.Object sender, System.EventArgs e)
         {
@@ -50,8 +50,7 @@ namespace GPS_Tracking_Xamarin
             }
            
 
-            _chart.Entries = entries;
-            this.chartView.Chart = _chart;
+         
 
         }
 
