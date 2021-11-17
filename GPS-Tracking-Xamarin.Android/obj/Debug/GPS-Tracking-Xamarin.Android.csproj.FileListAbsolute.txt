@@ -653,3 +653,4 @@
 /Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/ed/Projects/GPS-Tracking-Xamarin/GPS-Tracking-Xamarin.Android/obj/Debug/GPS-Tracking-Xamarin.Android.csproj.AssemblyReference.cache
