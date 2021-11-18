@@ -12,11 +12,14 @@
                 BackgroundColor="#161617"
                 CornerRadius="0">
                 <Label
-                    FontSize="36"
+                    FontSize="30"
                     HorizontalTextAlignment="Center"
-                    Text="Welcome to Xamarin.Forms!"
+                    Text="Location / Wifi Str Xamarin.Forms! "
                     TextColor="White" />
+
+
             </Frame>
+            <Label FontSize="20" Text="📱 📶 📍" />
             <StackLayout Padding="20">
 
                 <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
@@ -79,3 +82,4 @@
     </ScrollView>
 
 </ContentPage>
+ 

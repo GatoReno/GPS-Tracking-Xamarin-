@@ -1,32 +1,13 @@
 ﻿<Properties StartupConfiguration="{B2A444C5-9D2E-4A56-9DF8-DE6C4B014789}|Default">
-  <MonoDevelop.Ide.ItemProperties.GPS-Tracking-Xamarin.Android PreferredExecutionTarget="Android.00481da10412" />
+  <MonoDevelop.Ide.ItemProperties.GPS-Tracking-Xamarin.Android PreferredExecutionTarget="Android.pixel_3a_pie_9_0_-_api_28" />
   <MonoDevelop.Ide.Workbench ActiveDocument="GPS-Tracking-Xamarin/MainPage.xaml">
     <Files>
       <File FileName="GPS-Tracking-Xamarin/MainPage.xaml.cs" Line="67" Column="1" />
-      <File FileName="GPS-Tracking-Xamarin/VM/BaseViewModel.cs" Line="1" Column="1" />
-      <File FileName="GPS-Tracking-Xamarin.Android/Services/LocationService/LocationUpdateService.cs" Line="38" Column="43" />
-      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml" Line="57" Column="50" NotebookId="1" />
-      <File FileName="GPS-Tracking-Xamarin/VM/MainViewModel.cs" Line="134" Column="1" NotebookId="1" />
-      <File FileName="GPS-Tracking-Xamarin/Models/TrackPoint.cs" Line="4" Column="18" NotebookId="1" />
+      <File FileName="GPS-Tracking-Xamarin/VM/BaseViewModel.cs" />
+      <File FileName="GPS-Tracking-Xamarin.Android/Services/LocationService/LocationUpdateService.cs" />
+      <File FileName="GPS-Tracking-Xamarin/MainPage.xaml" Line="85" Column="2" NotebookId="1" />
+      <File FileName="GPS-Tracking-Xamarin/VM/MainViewModel.cs" NotebookId="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="GPS-Tracking-Xamarin" expanded="True">
-            <Node name="GPS-Tracking-Xamarin" expanded="True">
-              <Node name="Models" expanded="True" />
-              <Node name="VM" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" selected="True" />
-            </Node>
-            <Node name="GPS-Tracking-Xamarin.Android" expanded="True">
-              <Node name="Services" expanded="True">
-                <Node name="LocationService" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

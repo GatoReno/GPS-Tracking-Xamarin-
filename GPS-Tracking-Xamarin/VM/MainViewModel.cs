@@ -108,8 +108,8 @@ namespace GPSTrackingXamarin.VM
             chartEntries.Add(new Microcharts.ChartEntry(e.WifiSignalStrRecived)
             {
                 Color = SKColor.Parse("#FF4081"),
-                Label = "x",
-                ValueLabel = $"{e.WifiSignalStrRecived} w"
+                Label = " ",
+                ValueLabel = " "
             });
             LineChartWifi.Entries = chartEntries;
             StopWifiTracker();
